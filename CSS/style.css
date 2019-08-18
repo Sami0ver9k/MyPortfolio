@@ -148,8 +148,10 @@ body {
 
 .item .projectname {
     font-size: 17px;
+    font-style: oblique;
     font-family: Verdana;
-    background-color: antiquewhite;
+    font-stretch: expanded;
+    background-color: #ede9ef;
     color: #1e272e;
 }
 
@@ -158,16 +160,13 @@ body {
     padding: 5px;
 }
 
-
-
 .itemsContainer {
     width: 100%;
 }
 
-.items .item{
+.items .item {
     padding-top: 15px;
     padding-left: 100px;
     position: relative;
     overflow: hidden;
-
 }
