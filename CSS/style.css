@@ -1,0 +1,173 @@
+body {
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #f5f6fa;
+    color: #1e272e;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+    left: 20px;
+}
+
+.slides-navigation a.next {
+    right: 20px;
+}
+
+.titleMessage {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 250px;
+    color: white;
+    top: 50%;
+    text-align: center;
+    margin-top: -150px;
+}
+
+.titleMessage .heading p {
+    font-weight: 100;
+    letter-spacing: 8px;
+    color: whitesmoke;
+    text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.titleMessage .heading .main {
+    font-size: 50px;
+}
+
+.titleMessage .heading .subject {
+    font-size: 20px;
+    color: white;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.customContainer {
+    width: 90%;
+}
+
+.container {
+    width: 100%;
+}
+
+.me {
+    max-width: 100%;
+}
+
+.skills,
+.contactSection {
+    background-color: #ff5e57;
+}
+
+.mySkills {
+    text-align: center;
+    color: beige;
+    margin-left: 25px;
+}
+
+.chart {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent {
+    color: #1e272e;
+    line-height: 150px;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+}
+
+.chart .percent:after {
+    content: '%';
+}
+
+.contactButton {
+    color: aliceblue;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #f5f6fa;
+    border-radius: 6px;
+}
+
+.contactButton:hover {
+    text-shadow: #06090c;
+    text-decoration: #f5f6fa;
+    background-color: aliceblue;
+}
+
+.filter {
+    width: 100%;
+    text-align: center;
+}
+
+.filter a {
+    color: #f5f6fa;
+    border: 2px solid #33e08a;
+    padding: 13px 20px;
+    display: block;
+    background-color: cadetblue;
+}
+
+.filter li {
+    display: inline-block;
+    padding: 6px;
+}
+
+.filter .current {
+    background-color: #33e08a;
+    border-color: wheat;
+    color: #f7fffb;
+}
+
+.section .head h2 {
+    text-align: center;
+    widows: 100%;
+    margin-bottom: 30px;
+}
+
+.item .projectname {
+    font-size: 17px;
+    font-family: Verdana;
+    background-color: antiquewhite;
+    color: #1e272e;
+}
+
+.itemsContainer .items ul {
+    display: inline-block;
+    padding: 5px;
+}
+
+
+
+.itemsContainer {
+    width: 100%;
+}
+
+.items .item{
+    padding-top: 15px;
+    padding-left: 100px;
+    position: relative;
+    overflow: hidden;
+
+}
