@@ -45,7 +45,7 @@ $(document).ready(function() {
             $('.chart').easyPieChart({
 
                 easing: 'easeInOut',
-                barColor: '#d2dae2',
+                barColor: '#E57373',
                 trackColor: false,
                 scaleColor: false,
                 lineCap: 'square',
@@ -139,7 +139,7 @@ $(document).ready(function() {
 
     var typed = new Typed(".typed", {
 
-        strings: ["", "Software Engineer.", "Machine Learning Enthusiast."],
+        strings: ["", "Software Engineering.", "Machine Learning.", "Deep Learening."],
         typeSpeed: 80,
         loop: true,
         startDelay: 1200,
