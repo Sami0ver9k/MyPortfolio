@@ -77,26 +77,60 @@ $(document).ready(function() {
 
 
 
-  $(".items").isotope({
+    $(".items").isotope({
         filter: '*'
-       
+
     });
 
-  $("#filters a").click(function(){
-    $("#filters .current").removeClass("current");
-    $(this).addClass("current");
-    
-    var selector = $(this).attr("data-filter");
+    $("#filters a").click(function() {
+        $("#filters .current").removeClass("current");
+        $(this).addClass("current");
 
-   $(".items").isotope({
-        filter: selector
-       
+        var selector = $(this).attr("data-filter");
+
+        $(".items").isotope({
+            filter: selector
+
+        });
+
+
+        return false;
+
+    });
+
+    $(".navbar li a").click(function(e) {
+        e.preventDefault(e);
+        var target = $(this).attr("href");
+        var position = $(target).offset().top;
+        $("html, body").animate({ scrollTop: position - 50 }, "slow");
+
+
+
+
     });
 
 
-   return false;
 
-  });
+
+
+    const nav = $(".navbar");
+    const navTop = nav.offset().top;
+
+    $(window).on("scroll", stickynav);
+
+    function stickynav() {
+        var body = $("body");
+        if ($(window).scrollTop() >= navTop) {
+
+            body.css("padding-top", nav.outerHeight() + "px");
+            body.addClass("fixedNav");
+
+        } else {
+            body.removeClass("fixedNav");
+            body.css("padding-top", 0);
+        }
+    }
+
 
 
 
@@ -118,7 +152,7 @@ $(document).ready(function() {
 
 
 
-  
+
 
 
 

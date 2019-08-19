@@ -1,8 +1,8 @@
 body {
     font-size: 15px;
     letter-spacing: 1px;
-    background-color: #f5f6fa;
-    color: #1e272e;
+    background-color: #F5F5F5;
+    color: #191c1f;
 }
 
 .slides-navigation .prev,
@@ -45,7 +45,7 @@ body {
 
 .titleMessage .heading .subject {
     font-size: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .section {
@@ -64,14 +64,13 @@ body {
     max-width: 100%;
 }
 
-.skills,
-.contactSection {
-    background-color: #ff5e57;
+.skills .contactSection {
+    background-color: rgb(46, 49, 49);
 }
 
 .mySkills {
     text-align: center;
-    color: beige;
+    color: rgb(26, 26, 22);
     margin-left: 25px;
 }
 
@@ -90,7 +89,7 @@ body {
 }
 
 .chart .percent {
-    color: #1e272e;
+    color: #f33535;
     line-height: 150px;
     display: inline-block;
     font-size: 30px;
@@ -102,18 +101,17 @@ body {
 }
 
 .contactButton {
-    color: aliceblue;
+    color: rgb(27, 49, 68);
     padding: 15px 20px;
     display: inline-block;
     margin-top: 20px;
-    border: 2px solid #f5f6fa;
     border-radius: 6px;
 }
 
 .contactButton:hover {
     text-shadow: #06090c;
     text-decoration: #f5f6fa;
-    background-color: aliceblue;
+    background-color: rgb(227, 238, 248);
 }
 
 .filter {
@@ -122,11 +120,12 @@ body {
 }
 
 .filter a {
-    color: #f5f6fa;
-    border: 2px solid #33e08a;
+    color: #eeeeee;
+    border: 2px solid #98cfb4;
+    border-radius: 6px;
     padding: 13px 20px;
     display: block;
-    background-color: cadetblue;
+    background-color: rgba(131, 131, 131, 0.966);
 }
 
 .filter li {
@@ -135,7 +134,7 @@ body {
 }
 
 .filter .current {
-    background-color: #33e08a;
+    background-color: #47c1d6;
     border-color: wheat;
     color: #f7fffb;
 }
@@ -169,4 +168,33 @@ body {
     padding-left: 100px;
     position: relative;
     overflow: hidden;
+}
+
+.copyright {
+    text-align: center;
+    color: #1e272e;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #f5f6fa;
+    font-size: larger;
+    padding: 20px 10px;
+    z-index: 100;
+}
+
+.navbar li {
+    padding: 0 12px;
+}
+
+.navbar a {
+    color: #212529;
+    font-family: Arial, Helvetica;
+    font-weight: 300;
+}
+
+.fixedNav .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
